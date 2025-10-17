@@ -5,7 +5,7 @@ from locators.home_locators import HomeLocators
 class HomePage(Page):
 
     def open_home_page(self):
-        self.driver.get("https://useinsider.com/")
+        self.get_link("https://useinsider.com/")
 
     def is_home_page_opened(self):
         return self.is_open(self.xpath(HomeLocators.HOME_LOCATOR))

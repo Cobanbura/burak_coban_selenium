@@ -27,6 +27,9 @@ class Page:
     def class_name(self, value):
         return (By.CLASS_NAME, value)
 
+    def get_link(self, address):
+        self.driver.get(address)
+
     def is_open(self, locator):
         try:
             element = self.driver.find_element(*locator)

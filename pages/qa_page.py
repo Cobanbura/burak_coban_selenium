@@ -5,7 +5,7 @@ from locators.qa_locators import QALocators
 class QAPage(Page):
 
     def open_qa_jobs_page(self):
-        self.driver.get("https://useinsider.com/careers/quality-assurance/")
+        self.get_link("https://useinsider.com/careers/quality-assurance/")
 
     def is_qa_jobs_page_opened(self):
         return self.is_open(self.xpath(QALocators.QA_PAGE_TITLE))
